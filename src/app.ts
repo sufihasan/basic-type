@@ -1,15 +1,42 @@
 
-let scrore: number[] = [30, 60, 75];
-console.log(scrore[1]);
+// any
+let randomValue: any = 'Hello';
 
-// alternative 
-let scores: Array<number> = [60, 70, 80];
+randomValue = 20;
+
+randomValue = true;
+
+// unknown
+
+let value: unknown = 'my name';
+
+value = 30;
+value = true;
+value = 'kasem';
+
+if (typeof value === 'string') {
+    console.log(value.toUpperCase());
+}
+
+function printMessage(): void {
+    console.log('well and done');
+}
+
+console.log(printMessage());
 
 
-let names: string[] = ['hasan', 'kamal', 'jamal'];
-console.log(names);
+function friendName(fNmae: string): string {
+    return `my friend name is ${fNmae}`;
+}
 
-// tuples
+const result = friendName('kamal');
+console.log(result);
 
-let student: [string, number, boolean] = ['alice', 22, true];
-console.log(student[0]);
+
+//null and undefined
+let nothings: null = null;
+let noValue: undefined = undefined;
+
+
+
+
