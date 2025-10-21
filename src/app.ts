@@ -1,42 +1,48 @@
+// sudent profile project with ts
+// const student1 = {
+//     name: 'Hasan',
+//     age: 27,
+//     isEnroll: true,
+//     courses: ['javaScript', 'typeScript', 'redux toolkit'],
+//     score: [88, 92, 95],
+//     info: ["Mamun", 23, true]
+// }
 
-// any
-let randomValue: any = 'Hello';
 
-randomValue = 20;
+// type Alias
 
-randomValue = true;
-
-// unknown
-
-let value: unknown = 'my name';
-
-value = 30;
-value = true;
-value = 'kasem';
-
-if (typeof value === 'string') {
-    console.log(value.toUpperCase());
+type Student = {
+    name: string,
+    age: number,
+    isEnroll: boolean,
+    courses: string[],
+    score: number[],
+    info: [string, number, boolean]
 }
 
-function printMessage(): void {
-    console.log('well and done');
+const student1: Student = {
+    name: 'Hasan',
+    age: 27,
+    isEnroll: true,
+    courses: ['javaScript', 'typeScript', 'redux toolkit'],
+    score: [88, 92, 95],
+    info: ["Mamun", 23, true]
 }
 
-console.log(printMessage());
-
-
-function friendName(fNmae: string): string {
-    return `my friend name is ${fNmae}`;
+const student2: Student = {
+    name: 'kamal',
+    age: 22,
+    isEnroll: false,
+    courses: ['bangla', 'english', 'math'],
+    score: [33, 55, 77],
+    info: ['Kamal', 22, true]
 }
 
-const result = friendName('kamal');
-console.log(result);
+function displayStudent(student: Student): void {
+    console.log(`Name: ${student.name}`);
+    console.log(`Age: ${student.age}`);
+    console.log(`Courses: ${student.courses.join(',')}`);
+}
 
-
-//null and undefined
-let nothings: null = null;
-let noValue: undefined = undefined;
-
-
-
+displayStudent(student1);
 

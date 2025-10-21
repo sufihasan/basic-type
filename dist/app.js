@@ -1,24 +1,34 @@
 "use strict";
+// sudent profile project with ts
+// const student1 = {
+//     name: 'Hasan',
+//     age: 27,
+//     isEnroll: true,
+//     courses: ['javaScript', 'typeScript', 'redux toolkit'],
+//     score: [88, 92, 95],
+//     info: ["Mamun", 23, true]
+// }
 Object.defineProperty(exports, "__esModule", { value: true });
-// any
-let randomValue = 'Hello';
-randomValue = 20;
-randomValue = true;
-// unknown
-let value = 'my name';
-value = 30;
-value = true;
-value = 'kasem';
-if (typeof value === 'string') {
-    console.log(value.toUpperCase());
+const student1 = {
+    name: 'Hasan',
+    age: 27,
+    isEnroll: true,
+    courses: ['javaScript', 'typeScript', 'redux toolkit'],
+    score: [88, 92, 95],
+    info: ["Mamun", 23, true]
+};
+const student2 = {
+    name: 'kamal',
+    age: 22,
+    isEnroll: false,
+    courses: ['bangla', 'english', 'math'],
+    score: [33, 55, 77],
+    info: ['Kamal', 22, true]
+};
+function displayStudent(student) {
+    console.log(`Name: ${student.name}`);
+    console.log(`Age: ${student.age}`);
+    console.log(`Courses: ${student.courses.join(',')}`);
 }
-function printMessage() {
-    console.log('well and done');
-}
-console.log(printMessage());
-function friendName(fNmae) {
-    return `my friend name is ${fNmae}`;
-}
-const result = friendName('kamal');
-console.log(result);
+displayStudent(student1);
 //# sourceMappingURL=app.js.map
