@@ -14,9 +14,9 @@
     // "types": ["node"],
     // and npm install -D @types/node
     // Other Outputs
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
+    "sourceMap": false, //// it is true but i write it false
+    "declaration": false, // it is true but i write it false
+    "declarationMap": false, // it was true but i write it false
     // Stricter Typechecking Options
     "noUncheckedIndexedAccess": true,
     "exactOptionalPropertyTypes": true,

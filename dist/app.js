@@ -31,4 +31,3 @@ function displayStudent(student) {
     console.log(`Courses: ${student.courses.join(',')}`);
 }
 displayStudent(student1);
-//# sourceMappingURL=app.js.map

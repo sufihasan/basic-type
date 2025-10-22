@@ -8,4 +8,3 @@ function greet(fName) {
     return `My friend Name is ${fName}`;
 }
 console.log(greet('Kamal'));
-//# sourceMappingURL=function.js.map

@@ -6,4 +6,9 @@ function studentInfo(sName, sAge, sStatus) {
 }
 console.log(studentInfo('Saleh', 33, 'Doctor'));
 console.log(studentInfo('maleka', 22));
-//# sourceMappingURL=optionalAndDefaultParameter.js.map
+// default parameter
+function welcomeSomeOne(GuestName = 'our honourable guest') {
+    return `Welcome to our home ${GuestName}`;
+}
+console.log(welcomeSomeOne('Kamrul Hasan'));
+console.log(welcomeSomeOne());
