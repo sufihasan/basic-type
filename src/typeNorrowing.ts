@@ -29,4 +29,17 @@ processInput(12);
 processInput(' abc ');
 
 
+// literal types
+
+type Action = 'start' | 'push' | 'stop' | 'submit' | 'reset';
+
+function handleAction(action: Action) {
+    console.log(`Action is : ${action}`);
+}
+
+
+handleAction('push');
+
+
+
 

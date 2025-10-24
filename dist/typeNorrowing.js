@@ -21,3 +21,7 @@ function processInput(input) {
 }
 processInput(12);
 processInput(' abc ');
+function handleAction(action) {
+    console.log(`Action is : ${action}`);
+}
+handleAction('push');
